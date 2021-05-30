@@ -52,7 +52,7 @@ button {
     border: 1px solid #888888;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     body {
         color: #333333;
         max-width: 650px;
