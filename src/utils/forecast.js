@@ -8,7 +8,7 @@ function forecast(latitude, longitude, callback) {
         if (error){
             callback("No internet connection or no response from the server. Try again later!", undefined);
         }else if (!body.current) {
-            callback("Please enter a valid Longitude / Latitude or check if the free api sessions are over", undefined);
+            callback("Free api sessions are over! Try again next month", undefined);
         }else
             callback(undefined, `The current temparature is ${body.current.temperature} but it feels like ${body.current.feelslike}`);
     });
